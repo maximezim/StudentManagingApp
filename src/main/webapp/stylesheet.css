@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cadre {
+	background: rgba(0, 0, 0, 0.05);
+	padding:20px;
+}
+
+img {
+	width: 50%;
+	margin-left:25%;
+	pointer-events: none;
+}
+
+h1 {
+	font-family:'Open Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+h1::selection {
+	color: white;
+	background-color: #F98012;
+}
+
+h2 {
+	font-family:'Open Sans', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    color: black;
+}
+
+h2::selection, label::selection, input[type="text"]::selection, input[type="password"]::selection {
+	color: white;
+	background-color: #F98012;
+}
+
+form {
+      width: 500px;
+      margin: 0 auto;
+}
+    
+input[type="text"], input[type="password"], select, input[type="number"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+      color:#666666;
+}
+
+select:focus {
+	  background:white;
+      border: 2px solid #F98012;
+      color:black;
+      outline:none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus{
+      background:#FEF2E8;
+      border: 2px solid #F98012;
+      color:black;
+      outline:none;
+}
+
+input[type="text"]:invalid, input[type="password"]:invalid, input[type="number"]:invalid {
+      background:#FFEFEF;
+      border: 2px solid red;
+      color:red;
+}
+    
+label {
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+}
+    
+input[type="submit"] {
+      width: 20%;
+      background: #F98012;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border:none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left:40%;
+}
+    
+input[type="submit"]:hover {
+      background: #FFB36D;
+      color: white;
+}
+
+option {
+	background:white;
+}
+
+option::hover {
+	background: #FFB36D;
+}
+
+input[type="submit"]:active {
+      background-color: white;
+      color: #F98012;
+}
